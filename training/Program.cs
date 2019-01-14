@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using training.model.player;
 using training.model.playlistEnumerable;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace training
       string path = "";
       Console.WriteLine("初始化程式～");
       iPlayer player = new Player2();
-      iPlaylistEnumerable playlist = new PlaylistEnumerable();
+      iPlaylistEnumerable playlist = new PlaylistByFileEnumerable();
       do
       {
         path = playlist.getNext();
