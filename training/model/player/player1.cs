@@ -22,8 +22,7 @@ namespace training.model.player
     }
     public void play()
     {
-      Console.WriteLine($"player1開始播放影片{videoPath}，睡眠3秒鐘");
-      Thread.Sleep(3000);
+      Console.WriteLine($"player1開始播放影片{videoPath}");
     }
     public void pause()
     {
