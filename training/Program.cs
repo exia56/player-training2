@@ -1,4 +1,5 @@
 ﻿using System;
+using training.model.player;
 
 namespace training
 {
@@ -7,11 +8,11 @@ namespace training
     static void Main(string[] args)
     {
       Console.WriteLine("初始化程式～");
-      Console.WriteLine("選擇播放的影片");
-      Console.WriteLine("使用播放器1來播放影片");
-      Console.WriteLine("播放器1開始播放影片");
-      Console.WriteLine("播放中～～～");
-      Console.WriteLine("播放完畢～釋放資源");
+      iplayer player = new player1();
+      player.initPlayer("video1");
+      player.play();
+      player.stop();
+      player.dispose();
     }
   }
 }
