@@ -7,11 +7,18 @@ namespace training
   {
     static void Main(string[] args)
     {
+      string path = "";
       Console.WriteLine("初始化程式～");
       iplayer player = new player1();
-      player.initPlayer("video1");
-      player.play();
-      player.stop();
+      do
+      {
+        Console.WriteLine("輸入要播放的影片路徑：");
+        path = Console.ReadLine();
+        if (String.IsNullOrEmpty(path) || path.Equals("exit")) break;
+        player.initPlayer(path);
+        player.play();
+        player.stop();
+      } while (true);
       player.dispose();
     }
   }
