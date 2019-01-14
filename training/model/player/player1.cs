@@ -3,11 +3,11 @@ using System.Threading;
 
 namespace training.model.player
 {
-  class player1 : iplayer
+  class Player1 : iPlayer
   {
     private string videoPath = "";
 
-    public player1()
+    public Player1()
     {
       Console.WriteLine("初始化player1");
       Console.WriteLine("初始化player1，參數1");

@@ -1,6 +1,6 @@
 namespace training.model.player
 {
-  interface iplayer
+  interface iPlayer
   {
     void initPlayer(string path);
     void play();
